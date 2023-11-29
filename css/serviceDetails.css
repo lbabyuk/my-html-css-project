@@ -1,0 +1,22 @@
+/* stylelint-disable selector-class-pattern */
+:root {
+    --main-bg: #0F1118;
+    --text-dark: #989CAC;
+    --main-color: #FF455B;
+    --text-white: #FFF;
+    --text: #26272C;
+    --first-gradient: #FF455B;
+    --second-gradient: #FF7245;
+}
+
+.service-content {
+    background-color: transparent;
+}
+
+.cases-white {
+    font-size: 4.5rem;
+}
+
+.portfolio__header {
+    color: var(--main-bg);
+}

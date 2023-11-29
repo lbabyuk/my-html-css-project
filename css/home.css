@@ -1,0 +1,431 @@
+/* stylelint-disable media-feature-range-notation */
+/* stylelint-disable font-family-name-quotes */
+/* stylelint-disable selector-class-pattern */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500&family=Raleway:wght@400;600;700&display=swap');
+
+:root {
+  --main-bg: #0F1118;
+  --text-dark: #989CAC;
+  --main-color: #FF455B;
+  --text-white: #FFF;
+  --text: #26272C;
+  --first-gradient: #FF455B;
+  --second-gradient: #FF7245;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+
+  color: #fff;
+  
+  font-family: 'Raleway', sans-serif;
+
+  background-color: var(--main-bg); 
+}
+
+/* navbar */
+
+.btn-close-white {
+  cursor: pointer;
+}
+
+/* brand */
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90vh;
+}
+
+.polygon::before {
+  margin: 5px; 
+
+  content: url('../img/polygon2.png');
+}
+
+.pretitle {
+  margin: 13px 0;
+
+  color: var(--main-color);
+
+  font-size: .75rem;
+}
+
+.title {
+  margin: 0 0 30px;
+
+  font-weight: bold;
+
+  font-size: 2.3rem;
+}
+
+.subtitle {
+  margin: 0 0 50px;
+
+  color: var(--text-dark);
+
+  font-size: 1.25rem; 
+}
+
+button {
+  flex: 1 1 auto;
+  padding: 12px 40px;
+
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-size: 200% auto;
+  
+  transition: 0.5s;
+ }
+
+.button:hover {
+  background-position: right center; 
+}
+
+.brandBtn {
+  background-image: linear-gradient(to right, var(--first-gradient) 0%, var(--second-gradient) 51%, var(--main-color) 100%);
+}
+
+.digital,
+.products {
+  position: absolute;
+
+  font-weight: 900;
+  font-size: 7.5rem;
+}
+
+.digital {
+  bottom: 160px;
+  left: -190px;
+  rotate: -90deg;
+
+  color: var(--main-bg);
+}
+
+.products {
+  top: 290px;
+  
+  left: 280px;
+  rotate: -90deg;
+}
+
+/* services */
+
+.viewAllBtn, .card-btn  {
+  color: var(--text-white);
+
+  cursor: pointer;
+}
+
+.cards, .services-content {
+  background-color: transparent;
+}
+
+.card-btn {
+  border: none;
+}
+
+.text {
+  color: var(--text-dark);
+}
+
+/* portfolio */
+
+#portfolio {
+  background-color: var(--text-white);
+}
+
+.portfolio__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  color: var(--text);
+}
+
+.heading__btn {
+  color: var(--text);
+  font-weight: bolder;
+}
+
+/* be in touch */
+
+#beintouch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+}
+
+.beintouch__card {
+  background-color: transparent;
+}
+
+.terms {
+  color: var(--first-gradient);
+}
+
+.cases-black {
+  color: var(--text);
+  font-size: 7.5rem;
+}
+
+.input {
+  background-color: transparent;
+}
+
+.cases-white {
+  color: var(--text-dark);
+  font-size: 7rem;
+}
+
+.cases-black,
+.cases-white {
+  /* rotate: -90deg; */
+
+  font-weight: bolder;
+}
+
+/* what we do */
+
+#whatwedo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.digital__transparent,
+.digital__black {
+  position: absolute;
+
+  font-weight: 900;
+  
+  rotate: -90deg;
+}
+
+.digital__black  {
+  right: 330px;
+  bottom: 140px;
+
+  color: var(--main-bg);
+  font-size: 7.5rem;
+}
+
+.digital__transparent {
+  right: 180px;
+  bottom: 200px;
+
+  color: var(--text);
+  font-size: 10rem;
+  
+  opacity: .4;
+} 
+
+.whatwedo__content, 
+.whatwedo__card  {
+  background-color: transparent;
+}
+
+.single-chart {
+  justify-content: space-around ;
+  width: 33%;
+}
+
+.circular-chart {
+  display: block;
+  max-width: 80%;
+  max-height: 250px;
+  
+  margin: 10px auto;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  animation: progress 1s ease-out forwards;
+
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+}
+
+/* side__icon-bar */
+
+.side__icon-bar {
+  position: fixed;
+  top: 50%;
+  z-index: 10;
+}
+
+.side__icon-bar a {
+  display: block;
+  padding: 16px;
+  
+  color: var(--text-dark);
+  font-size: 20px;
+
+  text-align: center;
+
+  transition: all 0.3s ease;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.orange .circle {
+  stroke: #ff9f00;
+}
+
+
+.percentage {
+  font-size: 0.5em;
+  font-family: sans-serif;
+
+  fill: #666;
+
+  text-anchor: middle;
+}
+
+/* blog */
+
+.blog_title{
+  color: var(--text-white);
+}
+
+.media__links {
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.footer-nav {
+  display: flex;
+}
+
+.footer-links a, 
+.footer-links span, 
+.media p {
+  color: var(--text-dark);
+  font-size: 14px;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  margin: 1em 0;
+  padding: 0;
+
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.usefulLinks  {
+  padding: 0;
+}
+
+
+@media screen and (max-width: 1470px) { 
+  .digital, 
+  .products {
+    display: none;
+  }
+
+  .digital__black  {
+    right: 250px;
+    bottom: 140px;
+  
+    color: var(--main-bg);
+    font-size: 7.5rem;
+  }
+  
+  .digital__transparent {
+    right: 120px;
+    bottom: 200px;
+  
+    color: var(--text);
+    font-size: 10rem;
+    
+    opacity: .4;
+  } 
+}
+
+@media screen and (max-width: 980px) {
+   #services {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #service {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #beintouch, 
+  #whatwedo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .digital__black, 
+  .digital__transparent  {
+   display: none;
+  }
+
+}
+  
+
+@media screen and (max-width: 769px) {
+  #home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 550px;
+    height: 90vh;
+  }
+
+  .home-image, .phone, .quote {
+    display: none;
+  }
+
+  #services,
+  #service, 
+  .portfolio__heading {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .digital__black, 
+  .digital__transparent  {
+   display: none;
+  }
+
+  .side__icon-bar {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 567px) {
+  .search {
+      width: 350px;
+
+      background: url("../img/Stroke.svg") no-repeat right;
+      background-position: 310px 7px;
+  }
+
+  .brandBtn {
+      display: none;
+  }
+}
