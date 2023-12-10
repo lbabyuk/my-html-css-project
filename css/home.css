@@ -11,6 +11,7 @@
   --text: #26272C;
   --first-gradient: #FF455B;
   --second-gradient: #FF7245;
+  --svg-color: #D9D9D9;
 }
 
 body {
@@ -30,13 +31,21 @@ body {
   cursor: pointer;
 }
 
+.btn-light:hover,
+.btn-outline-light:hover {
+  color: var(--text-white);
+  
+  background: linear-gradient(to right, var(--first-gradient) 0%, var(--second-gradient) 51%, var(--main-color) 100%);
+  box-shadow: 0 0 10px var(--main-color);
+}
+
 /* brand */
 
 #home {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 90vh;
+  min-height: 90vh;
 }
 
 .polygon::before {
@@ -89,6 +98,11 @@ button {
 .brandBtn {
   background-image: linear-gradient(to right, var(--first-gradient) 0%, var(--second-gradient) 51%, var(--main-color) 100%);
 }
+
+.brandBtn:hover {
+  box-shadow: 0 0 20px var(--main-color);
+}
+
 
 .digital,
 .products {
@@ -245,7 +259,7 @@ button {
 
 .circle-bg {
   fill: none;
-  stroke: #eee;
+  stroke: var(--svg-color);
   stroke-width: 3.8;
 }
 
@@ -319,6 +333,20 @@ button {
   font-size: 14px;
 }
 
+.header-links a:hover, 
+.footer-links a:hover ,
+.side__icon-bar a:hover,
+.viewAllBtn:hover,
+.blog-btn:hover,
+.home-location:hover,
+.service-details:hover  {
+    color: var(--second-gradient);
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+    text-decoration-color:var(--second-gradient);
+}
+
+
 hr {
   display: block;
   height: 1px;
@@ -387,6 +415,26 @@ hr {
   
 
 @media screen and (max-width: 769px) {
+  .smartphone-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+
+    border: 2px solid transparent;
+    border-radius: 50%;
+    
+    transition: all 500ms ease;
+}
+
+.smartphone-mobile:hover {
+  background-color: var(--second-gradient);
+  
+  box-shadow: 0 0 10px var(--main-color);
+}
+
+
   #home {
     display: flex;
     align-items: center;
@@ -427,5 +475,9 @@ hr {
 
   .brandBtn {
       display: none;
+  }
+
+  .get-more {
+    display: block;
   }
 }
