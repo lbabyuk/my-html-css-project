@@ -1,0 +1,28 @@
+:root {
+    --main-bg: #0F1118;
+    --text-dark: #989CAC;
+    --main-color: #FF455B;
+    --text-white: #FFF;
+    --text: #26272C;
+    --first-gradient: #FF455B;
+    --second-gradient: #FF7245;
+    --svg-color: #D9D9D9;
+  }
+
+cite::after {
+    float: right;
+
+    content: url('../img/elements-8.svg');
+}
+
+li, ul {
+    list-style-type: style;;
+}
+
+footer ul li,
+.tags ul li, 
+.media ul li,
+#aboutus ul li {
+    list-style: none;
+}
+

@@ -45,7 +45,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 90vh;
+  min-height: 70vh;
 }
 
 .polygon::before {
@@ -103,7 +103,6 @@ button {
   box-shadow: 0 0 20px var(--main-color);
 }
 
-
 .digital,
 .products {
   position: absolute;
@@ -113,7 +112,7 @@ button {
 }
 
 .digital {
-  bottom: 160px;
+  bottom: 120px;
   left: -190px;
   rotate: -90deg;
 
@@ -121,13 +120,17 @@ button {
 }
 
 .products {
-  top: 290px;
+  top: 240px;
   
-  left: 280px;
+  left: 310px;
   rotate: -90deg;
 }
 
 /* services */
+
+#services {
+  min-height: 80vh;
+}
 
 .viewAllBtn, .card-btn  {
   color: var(--text-white);
@@ -166,17 +169,36 @@ button {
   font-weight: bolder;
 }
 
+.cases-white {
+  color: var(--text-dark);
+  font-size: 7rem;
+}
+
+.cases-black,
+.cases-white {
+  /* rotate: -90deg; */
+
+  font-weight: bolder;
+}
+
+
 /* be in touch */
 
 #beintouch {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30vh;
+  height: 50vh;
 }
 
 .beintouch__card {
+  margin: 10px;
+
   background-color: transparent;
+}
+
+#beintouch .form {
+  margin: 10px;
 }
 
 .terms {
@@ -192,27 +214,22 @@ button {
   background-color: transparent;
 }
 
-.cases-white {
-  color: var(--text-dark);
-  font-size: 7rem;
-}
-
-.cases-black,
-.cases-white {
-  /* rotate: -90deg; */
-
-  font-weight: bolder;
-}
-
 /* what we do */
 
 #whatwedo {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 10px;
+  padding: 50px;
 }
 
 .digital__transparent,
+.digital__black {
+  display: none;
+}
+
+/* .digital__transparent,
 .digital__black {
   position: absolute;
 
@@ -237,7 +254,7 @@ button {
   font-size: 10rem;
   
   opacity: .4;
-} 
+}  */
 
 .whatwedo__content, 
 .whatwedo__card  {
@@ -312,6 +329,19 @@ button {
 }
 
 /* blog */
+
+.after::after{
+  margin: 5px;
+
+  content: url('../img/share-2.svg');
+}
+
+.before::before{
+  margin: 5px;
+
+  content: url('../img/ellipse.svg');
+}
+
 
 .blog_title{
   color: var(--text-white);
@@ -434,13 +464,12 @@ hr {
   box-shadow: 0 0 10px var(--main-color);
 }
 
-
   #home {
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 550px;
-    height: 90vh;
+    height: 60vh;
   }
 
   .home-image, .phone, .quote {
@@ -453,6 +482,7 @@ hr {
     display: flex;
     flex-direction: column;
   }
+
 
   .digital__black, 
   .digital__transparent  {
@@ -479,5 +509,9 @@ hr {
 
   .get-more {
     display: block;
+  }
+
+  .cases-white {
+    font-size: 5rem;
   }
 }
