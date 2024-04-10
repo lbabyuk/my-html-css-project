@@ -1,56 +1,62 @@
-/* stylelint-disable selector-class-pattern */
-/* stylelint-disable media-feature-range-notation */
 :root {
-    --main-bg: #0F1118;
-    --text-dark: #989CAC;
-    --main-color: #FF455B;
-    --text-white: #FFF;
-    --text: #26272C;
-    --first-gradient: #FF455B;
-    --second-gradient: #FF7245;
+  --main-bg: #0f1118;
+  --text-dark: #989cac;
+  --main-color: #ff455b;
+  --text-white: #fff;
+  --text: #26272c;
+  --first-gradient: #ff455b;
+  --second-gradient: #ff7245;
 }
 
 .main-color {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 
 .card__btn {
-    text-transform: capitalize; 
+  text-transform: capitalize;
 
-    background-color: transparent; 
-    border: 1px solid var(--text-white);
+  background-color: transparent;
+  border: 1px solid var(--text-white);
 }
 
 .card__btn:hover {
-    color: var(--text-white);
-    
-    background-image: linear-gradient(to right, var(--first-gradient) 0%, var(--second-gradient) 51%, var(--main-color) 100%);
+  color: var(--text-white);
+
+  background-image: linear-gradient(
+    to right,
+    var(--first-gradient) 0%,
+    var(--second-gradient) 51%,
+    var(--main-color) 100%
+  );
 }
 
 .item-text::before {
-    margin-right: 10px;
+  margin-right: 10px;
 
-    color: var(--main-color);
-    
-    content: '\2713';
+  color: var(--main-color);
+
+  content: "\2713";
 }
 
 .card-text {
-    line-height: 1.6;
+  line-height: 1.6;
+}
+
+.cases-black {
+  font-size: 5rem;
 }
 
 @media screen and (max-width: 769px) {
-    .cases-black {
-        font-size: 4rem;
-    }
-
-    .heading__body h2 {
-        font-size: 2rem;
-    }
-
-    .text {
-        font-size: .8rem;
-        line-height: 1.6;
-    }
-  
+  .cases-black {
+    font-size: 4rem;
   }
+
+  .heading__body h2 {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+}

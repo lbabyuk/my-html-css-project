@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="container-fluid">
-        <header id="header" class="container-fluid">
+        <header id="header" class="container-fluid header">
           <nav class="navbar navbar-dark">
             <div class="container-fluid">
               <div class="d-flex align-self-sm-evenly">
@@ -57,12 +57,12 @@
             </div>
           </nav>
         </header>
-        <section class="side__icon-bar">
+        <section class="side-icon-bar">
           <a href="https://www.facebook.com/">Fb</a>
           <a href="https://twitter.com/">Tw</a>
           <a href="https://www.instagram.com/">In</a>
         </section>  
-        <section id="aboutus" class="container d-flex p-3 flex-wrap">
+        <section id="aboutus" class="container d-flex p-3 flex-wrap aboutus">
             <h1>SERVICES</h1>
             <ul class="d-flex justify-content-end align-items-center text-center flex-grow-1">
                 <li class="nav-item m-2"><a class="nav-link active home-location" aria-current="page" href="./index.html">Home</a></li>
@@ -70,7 +70,7 @@
                 <li class="nav-item m-2"><a class="nav-link service-details" aria-current="page" href="./serviceDetails.html">Services</a></li>
             </ul>
         </section>
-        <section id="services" class="container d-flex">
+        <section id="services" class="container d-flex services">
            <div class="row row-cols-1 row-cols-xl-3 row-cols-md-2 row-cols-sm-1 m-4 p-4 g-4">
               <div class="col p-2">
                  <div class="card cards border border-light p-4 h-100">
@@ -146,18 +146,18 @@
              </div>
             </div>
           </section>
-        <section id="portfolio">
-            <div class="p-4 m-4">
+        <section id="portfolio" class="portfolio">
+            <div class="p-4 m-5">
                 <div class="heading__body text-dark">
                   <h3 class="pretitle polygon">HOW IT WORKS</h3>
                   <h2 class="title">Watch Our Working Process</h2>
                 </div>
             </div>
-            <div class="portfolio__images row row-cols-1 row-cols-xl-2 row-cols-md-2 row-cols-sm-1 m-3 pb-4"> 
+            <div class="portfolio__images row row-cols-1 row-cols-xl-2 row-cols-md-2 row-cols-sm-1 m-5 pb-4"> 
               <div class="col">
                 <div class="card">
                     <video controls>
-                      <source src="./img/watch.png" type="video/mp4">
+                      <source src="./img/video.webm" type="video/webm" autoplay muted loop>
                     </video>
                 </div>
               </div>
@@ -168,14 +168,14 @@
               </div>
             </div>
         </section>
-        <section id="service" class="container">
+        <section id="service" class="container service">
             <div class="p-4 m-4">
                 <div class="heading__body">
                   <h3 class="pretitle polygon">PRICES</h3>
                   <h2 class="title">How Much it Costs</h2>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-xl-3 row-cols-md-2 row-cols-sm-1 m-4 p-4 g-4">
+            <div class="row row-cols-1 row-cols-xl-3 row-cols-md-2 row-cols-sm-1 p-4 g-2 m-1">
                <div class="col p-2">
                   <div class="card cards border border-light p-4 h-100">
                     <div class="card-header main-color">

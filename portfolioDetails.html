@@ -18,7 +18,7 @@
 </head>
 <body>
     <div class="container-fluid">
-        <header id="header" class="container-fluid">
+        <header id="header" class="container-fluid header">
           <nav class="navbar navbar-dark">
             <div class="container-fluid">
               <div class="d-flex align-self-sm-evenly">
@@ -60,12 +60,12 @@
             </div>
           </nav>
         </header>
-        <section class="side__icon-bar">
+        <section class="side-icon-bar">
           <a href="https://www.facebook.com/">Fb</a>
           <a href="https://twitter.com/">Tw</a>
           <a href="https://www.instagram.com/">In</a>
         </section>
-        <section id="aboutus" class="container d-flex p-3 flex-wrap">
+        <section id="aboutus" class="container d-flex p-3 flex-wrap aboutus">
             <h1>PORTFOLIO CASE</h1>
             <ul class="d-flex justify-content-end align-items-center text-center flex-grow-1">
                 <li class="nav-item m-2"><a class="nav-link active home-location" aria-current="page" href="./index.html">Home</a></li>
@@ -75,7 +75,7 @@
                 <li class="nav-item m-2"><a class="nav-link service-details active" aria-current="page" href="#">Portfolio Case</a></li>
               </ul>
         </section>
-        <section id="slider" class="container">
+        <section id="slider" class="container slider">
           <div class="slider-wrapper">
             <div class="image-list">
               <img src="./img/laptop-1.png" alt="laptop" class="image-item">
@@ -98,7 +98,7 @@
             </div>
           </div>
          </section>
-         <section id="about" class="container my-5">
+         <section id="about" class="container my-5 about">
           <div class="row align-items-center">
             <div class="col-sm-8">
               <div class="beintouch__card">
@@ -146,14 +146,14 @@
           </div>
           <hr />
         </section>
-        <section id="portfolio">
-          <div class="portfolio__header p-4 m-4">
+        <section id="portfolio" class="portfolio">
+          <div class="portfolio__header p-4 m-5">
             <div class="heading__body">
               <h3 class="pretitle polygon">CASES</h3>
               <h2 class="title">Related Cases</h2>
             </div>
           </div>
-          <div class="portfolio__images row row-cols-1 row-cols-xl-4 row-cols-md-2 row-cols-sm-1 m-3 pb-4"> 
+          <div class="portfolio__images row row-cols-1 row-cols-xl-4 row-cols-md-2 row-cols-sm-1 m-5 pb-4"> 
             <div class="col p-2">
               <div class="card">
                 <img src="./img/airpods.png" alt="airpods" class="img-fluid">
@@ -176,7 +176,7 @@
             </div>
           </div>
       </section>
-      <section id="beintouch" class="container">
+      <section id="beintouch" class="container beintouch">
         <div class="beintouch__card">
             <h2 class="card-title p-2">Always Be in touch</h2>
             <p class="card-subtitle p-2 text">Subscribe if you want always to be known about all the news and available propositions</p>
@@ -190,7 +190,7 @@
              <button class="btn brandBtn m-2" type="submit">Subscribe</button> 
             </div>
             <div class="col-12">
-              <div class="form-check mb-3">
+              <div class="form-check mb-3 d-flex align-items-center">
                 <input class="form-check-input m-1 input border" type="checkbox" id="gridCheck">
                 <label class="form-check-label m-1" for="gridCheck">
                   I Accept  all <span class="terms"> Terms and Conditions</span>

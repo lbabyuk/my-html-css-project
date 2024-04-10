@@ -1,79 +1,75 @@
-/* stylelint-disable selector-class-pattern */
-/* stylelint-disable media-feature-range-notation */
 :root {
-    --main-bg: #0F1118;
-    --text-dark: #989CAC;
-    --main-color: #FF455B;
-    --text-white: #FFF;
-    --text: #26272C;
-    --first-gradient: #FF455B;
-    --second-gradient: #FF7245;
-}
-
-#aboutus h1 {
-    font-weight: 900;
-    font-size: 60px;
+  --main-bg: #0f1118;
+  --text-dark: #989cac;
+  --main-color: #ff455b;
+  --text-white: #fff;
+  --text: #26272c;
+  --first-gradient: #ff455b;
+  --second-gradient: #ff7245;
 }
 
 /* what we do */
 
 .number {
-    color: var(--main-color);
-    font-weight: 500;
-    font-size: 3rem;
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 3rem;
 }
 
 /* digital */
 
-.cases-white, .cases-black {
-    font-size: 4.6rem;
+.cases-white {
+  font-size: 3.6rem;
+}
+
+.cases-black {
+  font-size: 2.6rem;
 }
 
 /* why us */
 
 .item-text::before {
-    margin-right: 10px;
+  margin-right: 10px;
 
-    color: var(--main-color);
-    
-    content: '\2713';
+  color: var(--main-color);
+
+  content: "\2713";
 }
 
-
 @media screen and (max-width: 769px) {
-    #aboutus h1 {
-        font-weight: 900;
-        font-size: 30px;
-    }
-
-    .whatwedo__content h2 {
-        font-size: 2rem;
-    }
-
-    .subtitle {
-        font-size: 1.5rem;
-        line-height: 1.8rem;
-    }
-
-    .subtitle__subtitle {
-        font-size: 1.2rem;
-        line-height: 1.6rem;
-
-    }
-
-    .top {
-        display: none;
-    }
-
-    .cards .card-title {
-        font-size: 0.75rem;
-    }
-
-    .number {
-        font-size: 2rem;
-    }
-
-    .cases-white, .cases-black {
-        font-size: 4rem;
-    }
+  #aboutus h1 {
+    font-weight: 900;
+    font-size: 30px;
   }
+
+  .whatwedo__content h2 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .subtitle__subtitle {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  .top {
+    display: none;
+  }
+
+  .cards .card-title {
+    font-size: 1.2rem;
+  }
+
+  .number {
+    font-size: 2rem;
+  }
+
+  .cases-white,
+  .cases-black {
+    font-size: 4rem;
+  }
+}

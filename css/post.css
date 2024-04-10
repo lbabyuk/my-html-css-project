@@ -1,28 +1,28 @@
 :root {
-    --main-bg: #0F1118;
-    --text-dark: #989CAC;
-    --main-color: #FF455B;
-    --text-white: #FFF;
-    --text: #26272C;
-    --first-gradient: #FF455B;
-    --second-gradient: #FF7245;
-    --svg-color: #D9D9D9;
-  }
-
-cite::after {
-    float: right;
-
-    content: url('../img/elements-8.svg');
+  --main-bg: #0f1118;
+  --text-dark: #989cac;
+  --main-color: #ff455b;
+  --text-white: #fff;
+  --text: #26272c;
+  --first-gradient: #ff455b;
+  --second-gradient: #ff7245;
+  --svg-color: #d9d9d9;
 }
 
-li, ul {
-    list-style-type: style;;
+cite::after {
+  float: right;
+
+  content: url("../img/elements-8.svg");
+}
+
+li,
+ul {
+  list-style-type: style;
 }
 
 footer ul li,
-.tags ul li, 
+.tags ul li,
 .media ul li,
-#aboutus ul li {
-    list-style: none;
+.aboutus ul li {
+  list-style: none;
 }
-

@@ -1,50 +1,50 @@
-  .parent {
-    position: relative;
+.parent {
+  position: relative;
 
-    height: 50vh;
-    margin: 20px;
-    padding: 40px;
-  }
+  height: 50vh;
+  margin: 20px;
+  padding: 40px;
+}
 
-  .image1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
+.image1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
 
-    transform: translate(-50%, -50%);
-   } 
+  transform: translate(-50%, -50%);
+}
 
-  .image2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+.image2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
-    transform: translate(-50%, -50%);
-  }
+  transform: translate(-50%, -50%);
+}
 
-  .parent-text {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    
-    font-size: 1.3rem;
+.parent-text {
+  position: absolute;
+  top: 70%;
+  left: 50%;
 
-    transform: translate(-50%, -50%);
+  font-size: 1.3rem;
+
+  transform: translate(-50%, -50%);
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 30vh;
-    margin-bottom: 50px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  margin-bottom: 50px;
 }
 
 .search {
-    min-width: 350px;
+  min-width: 350px;
 
-    background: url("../img/search.svg") no-repeat right;
-    background-position: 310px 7px;
+  background: url("../img/search.svg") no-repeat right;
+  background-position: 310px 7px;
 }

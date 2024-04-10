@@ -1,8 +1,7 @@
-/* stylelint-disable media-feature-range-notation */
 .link-item a {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .form-control {
-    color: #fff
+  color: #fff;
 }
