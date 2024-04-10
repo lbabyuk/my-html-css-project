@@ -126,7 +126,7 @@ button {
   position: absolute;
 
   font-weight: 900;
-  font-size: 7.5rem;
+  font-size: 7rem;
 }
 
 .digital {
@@ -140,7 +140,7 @@ button {
 .products {
   top: 240px;
 
-  left: 310px;
+  left: 280px;
   rotate: -90deg;
 }
 
@@ -482,6 +482,7 @@ hr {
 }
 
 @media screen and (max-width: 567px) {
+
   .search {
     width: 350px;
 

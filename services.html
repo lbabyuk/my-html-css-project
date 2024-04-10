@@ -1,307 +1,494 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link 
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
-      rel="stylesheet" 
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
-      crossorigin="anonymous">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/services.css">
-    <title>Services</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DIGENS - digital products for your brand">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/services.css" />
+    <title>DIGENS</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+  </head>
+  <body>
     <div class="container-fluid">
-        <header id="header" class="container-fluid header">
-          <nav class="navbar navbar-dark">
-            <div class="container-fluid">
-              <div class="d-flex align-self-sm-evenly">
-                <button class="navbar-toggler me-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                  <img src="./img/burger-menu.svg" alt="burger-menu">
-                </button>
-                <a class="navbar-brand" href="#"><img src="./img/header-logo.svg" alt="header-logo"></a>
+      <header id="header" class="container-fluid header">
+        <nav class="navbar navbar-dark">
+          <div class="container-fluid">
+            <div class="d-flex align-self-sm-evenly">
+              <button
+                class="navbar-toggler me-3"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar"
+                aria-controls="offcanvasDarkNavbar"
+              >
+                <img src="./img/burger-menu.svg" alt="burger-menu" />
+              </button>
+              <a class="navbar-brand" href="#"
+                ><img src="./img/header-logo.svg" alt="header-logo"
+              /></a>
+            </div>
+            <div class="d-flex justify-content-evenly align-items-center">
+              <a href="tel:+15471258965" class="smartphone-img me-3"
+                ><img
+                  src="/img/smartphone-xs.svg"
+                  alt="smartphone-mobile"
+                  class="smartphone-mobile d-lg-none d-md-none d-lg-none"
+              /></a>
+              <a href="tel:+15471258965" class="smartphone-img me-3"
+                ><img
+                  src="/img/smartphone-xl.svg"
+                  alt="smartphone-xl"
+                  class="smartphone-xl d-sm-none d-md-block d-lg-block d-xl-block d-none"
+              /></a>
+              <a
+                href="tel:+15471258965"
+                class="phone text-light text-center me-3 d-sm-none d-md-block"
+                href="#"
+                >+1 547 125 89 65</a
+              >
+              <button
+                class="btn btn-outline-light d-sm-none d-md-block quote"
+                type="submit"
+              >
+                Get A Quote
+              </button>
+            </div>
+            <div
+              class="offcanvas offcanvas-start text-bg-dark"
+              tabindex="-1"
+              id="offcanvasDarkNavbar"
+              aria-labelledby="offcanvasDarkNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <a class="navbar-brand" href="#"
+                  ><img src="./img/header-logo.svg" alt="header-logo"
+                /></a>
+                <a
+                  href="#"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></a>
               </div>
-              <div class="d-flex justify-content-evenly align-items-center">
-                <a href="tel:+15471258965" class="smartphone-img me-3"><img src="/img/smartphone-xs.svg" alt="smartphone-mobile" class="smartphone-mobile d-lg-none d-md-none d-lg-none"></a> 
-                <a href="tel:+15471258965" class="smartphone-img me-3"><img src="/img/smartphone-xl.svg" alt="smartphone-xl" class="smartphone-xl d-sm-none d-md-block d-lg-block d-xl-block d-none"></a>
-                <a href="tel:+15471258965" class="phone text-light text-center me-3 d-sm-none d-md-block" href="#">+1 547 125 89 65</a>
-                <button class="btn btn-outline-light d-sm-none d-md-block quote" type="submit">Get A Quote</button>
-              </div>
-              <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                  <a class="navbar-brand" href="#"><img src="./img/header-logo.svg" alt="header-logo"></a>
-                  <a href="#" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></a>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end text-center flex-grow-1 pe-3 header-links">
-                    <li class="nav-item"><a class="nav-link" aria-current="page" href="./about.html">About us</a></li>
-                  <li class="nav-item"><a class="nav-link" href="./services.html">Service</a></li>
-                  <li class="nav-item"><a class="nav-link" href="./serviceDetails.html">Service details</a></li>
-                  <li class="nav-item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
-                  <li class="nav-item"><a class="nav-link" href="./portfolioDetails.html">Portfolio details</a></li>
-                  <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
-                  <li class="nav-item"><a class="nav-link" href="./post.html">Post</a></li>
-                  <li class="nav-item"><a class="nav-link" href="./postSidebar.html">Post With Sidebar</a></li>
-                  <li class="nav-item"><a class="nav-link" href="./contact.html">Contact us</a></li>
-                  <li class="nav-item"><a class="nav-link" href="./error.html">404</a></li>
-                  </ul>
-                  <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-light" type="submit">Search</button>
-                  </form>
-                </div>
+              <div class="offcanvas-body">
+                <ul
+                  class="navbar-nav justify-content-end text-center flex-grow-1 pe-3 header-links"
+                >
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./about.html"
+                      >About us</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./services.html">Service</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./serviceDetails.html"
+                      >Service details</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./portfolioDetails.html"
+                      >Portfolio details</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./post.html">Post</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./postSidebar.html"
+                      >Post With Sidebar</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./error.html">404</a>
+                  </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-light" type="submit">Search</button>
+                </form>
               </div>
             </div>
-          </nav>
-        </header>
-        <section class="side-icon-bar">
-          <a href="https://www.facebook.com/">Fb</a>
-          <a href="https://twitter.com/">Tw</a>
-          <a href="https://www.instagram.com/">In</a>
-        </section>  
-        <section id="aboutus" class="container d-flex p-3 flex-wrap aboutus">
-            <h1>SERVICES</h1>
-            <ul class="d-flex justify-content-end align-items-center text-center flex-grow-1">
-                <li class="nav-item m-2"><a class="nav-link active home-location" aria-current="page" href="./index.html">Home</a></li>
-                <li class="nav-item m-2"><a class="nav-link" aria-current="page" href="#">&#8212;</a></li>
-                <li class="nav-item m-2"><a class="nav-link service-details" aria-current="page" href="./serviceDetails.html">Services</a></li>
+          </div>
+        </nav>
+      </header>
+      <section class="side-icon-bar">
+        <a href="https://www.facebook.com/">Fb</a>
+        <a href="https://twitter.com/">Tw</a>
+        <a href="https://www.instagram.com/">In</a>
+      </section>
+      <section id="aboutus" class="container d-flex p-3 flex-wrap aboutus">
+        <h1>SERVICES</h1>
+        <ul
+          class="d-flex justify-content-end align-items-center text-center flex-grow-1"
+        >
+          <li class="nav-item m-2">
+            <a
+              class="nav-link active home-location"
+              aria-current="page"
+              href="./index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link" aria-current="page" href="#">&#8212;</a>
+          </li>
+          <li class="nav-item m-2">
+            <a
+              class="nav-link service-details"
+              aria-current="page"
+              href="./serviceDetails.html"
+              >Services</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section id="services" class="container d-flex services">
+        <div
+          class="row row-cols-1 row-cols-xl-3 row-cols-md-2 row-cols-sm-1 m-4 p-4 g-4"
+        >
+          <div class="col p-2">
+            <div class="card cards border border-light p-4 h-100">
+              <img
+                src="./img/web.svg"
+                alt="web"
+                class="card-image img-fluid m-2 p-2 w-50"
+              />
+              <div class="card-body">
+                <h4 class="card-title p-2">Web Development</h4>
+                <p class="card-text text">
+                  Our developers are carefully considering how your product
+                  should work while mainta...
+                </p>
+              </div>
+              <div class="card-footer">
+                <a class="btn card-btn viewAllBtn" href="./serviceDetails.html"
+                  >&#8594;</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col p-2">
+            <div class="card cards border border-light p-4 h-100">
+              <img
+                src="./img/seo.svg"
+                alt="seo"
+                class="card-image img-fluid m-2 p-2 w-50"
+              />
+              <div class="card-body">
+                <h4 class="card-title p-2">SEO optimization</h4>
+                <p class="card-text text">
+                  Promotion of your product is an important step in making money
+                  and constant popula...
+                </p>
+              </div>
+              <div class="card-footer">
+                <a class="btn card-btn viewAllBtn" href="./serviceDetails.html"
+                  >&#8594;</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col p-2">
+            <div class="card cards border border-light p-4 h-100">
+              <img
+                src="./img/ui.svg"
+                alt="ui"
+                class="card-image img-fluid m-2 p-2 w-50"
+              />
+              <div class="card-body">
+                <h4 class="card-title p-2">Ui/UX Design</h4>
+                <p class="card-text text">
+                  Everything starts with the beautiful. And professional design
+                  is of great importa...
+                </p>
+              </div>
+              <div class="card-footer">
+                <a class="btn card-btn viewAllBtn" href="./serviceDetails.html"
+                  >&#8594;</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col p-2">
+            <div class="card cards border border-light p-4 h-100">
+              <img
+                src="./img/app.png"
+                alt="web"
+                class="card-image img-fluid m-2 p-2 w-50"
+              />
+              <div class="card-body">
+                <h4 class="card-title p-2">App Development</h4>
+                <p class="card-text text">
+                  Our developers are carefully considering how your product
+                  should work while mainta...
+                </p>
+              </div>
+              <div class="card-footer">
+                <a class="btn card-btn viewAllBtn" href="./serviceDetails.html"
+                  >&#8594;</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col p-2">
+            <div class="card cards border border-light p-4 h-100">
+              <img
+                src="./img/marketing.png"
+                alt="seo"
+                class="card-image img-fluid m-2 p-2 w-50"
+              />
+              <div class="card-body">
+                <h4 class="card-title p-2">Marketing strategy</h4>
+                <p class="card-text text">
+                  Promotion of your product is an important step in making money
+                  and constant popula...
+                </p>
+              </div>
+              <div class="card-footer">
+                <a class="btn card-btn viewAllBtn" href="./serviceDetails.html"
+                  >&#8594;</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col p-2">
+            <div class="card cards border border-light p-4 h-100">
+              <img
+                src="./img/pay.png"
+                alt="ui"
+                class="card-image img-fluid m-2 p-2 w-50"
+              />
+              <div class="card-body">
+                <h4 class="card-title p-2">Pay per click</h4>
+                <p class="card-text text">
+                  Everything starts with the beautiful. And professional design
+                  is of great importa...
+                </p>
+              </div>
+              <div class="card-footer">
+                <a class="btn card-btn viewAllBtn" href="./serviceDetails.html"
+                  >&#8594;</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="portfolio">
+        <div class="p-4 m-5">
+          <div class="heading__body text-dark">
+            <h3 class="pretitle polygon">HOW IT WORKS</h3>
+            <h2 class="title">Watch Our Working Process</h2>
+          </div>
+        </div>
+        <div
+          class="portfolio__images row row-cols-1 row-cols-xl-2 row-cols-md-2 row-cols-sm-1 m-5 pb-4"
+        >
+          <div class="col">
+            <div class="card">
+              <video controls>
+                <source
+                  src="./img/video.webm"
+                  type="video/webm"
+                  autoplay
+                  muted
+                  loop
+                />
+              </video>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0">
+              <p class="cases-black">PROCESS</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="service" class="container service">
+        <div class="p-4 m-4">
+          <div class="heading__body">
+            <h3 class="pretitle polygon">PRICES</h3>
+            <h2 class="title">How Much it Costs</h2>
+          </div>
+        </div>
+        <div
+          class="row row-cols-1 row-cols-xl-3 row-cols-md-2 row-cols-sm-1 p-4 g-2 m-1"
+        >
+          <div class="col p-2">
+            <div class="card cards border border-light p-4 h-100">
+              <div class="card-header main-color">BASIC</div>
+              <div class="card-body">
+                <h4 class="card-title p-2"><sup>$</sup>479<sup>.99</sup></h4>
+                <p class="card-text text">
+                  The approach to each new project is individual, we treat
+                  equally every customer.
+                </p>
+                <p class="text item-text">Customized Store Design</p>
+                <p class="text item-text">Inquiry Form</p>
+                <p class="text item-text">Responsive Design</p>
+                <p class="text item-text">Subscription Pages</p>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="card__btn">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col p-2">
+            <div class="card cards border border-light p-4 h-100">
+              <div class="card-header main-color">POWER</div>
+              <div class="card-body">
+                <h4 class="card-title p-2"><sup>$</sup>595<sup>.99</sup></h4>
+                <p class="card-text text">
+                  The approach to each new project is individual, we treat
+                  equally every customer.
+                </p>
+                <p class="text item-text">Competitor analysis</p>
+                <p class="text item-text">Offer Pop-Up Windows</p>
+                <p class="text item-text">Design prototyping</p>
+                <p class="text item-text">Subscription Pages</p>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="card__btn">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col p-2">
+            <div class="card cards border border-light p-4 h-100">
+              <div class="card-header main-color">BUSINESS</div>
+              <div class="card-body">
+                <h4 class="card-title p-2"><sup>$</sup>779<sup>.99</sup></h4>
+                <p class="card-text text">
+                  The approach to each new project is individual, we treat
+                  equally every customer.
+                </p>
+                <p class="text item-text">Unlimited Web Space</p>
+                <p class="text item-text">FREE Site Building Tools</p>
+                <p class="text item-text">FREE Site Building Tools</p>
+                <p class="text item-text">Subscription Pages</p>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="card__btn">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="contact" class="container">
+        <nav class="navbar p-3 flex-md-column flex-wrap">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="./img/footer-logo.svg" alt="Bootstrap" />
+            </a>
+            <ul class="footer-links nav justify-content-end">
+              <li class="footer-linkItem nav-item">
+                <a href="./index.html" class="nav-link active">Home</a>
+              </li>
+              <li class="footer-linkItem nav-item">
+                <a href="./about.html" class="nav-link">About Us</a>
+              </li>
+              <li class="footer-linkItem nav-item">
+                <a href="./services.html" class="nav-link">Services</a>
+              </li>
+              <li class="footer-linkItem nav-item">
+                <a href="./portfolio.html" class="nav-link">Portfolio</a>
+              </li>
+              <li class="footer-linkItem nav-item">
+                <a href="./blog.html" class="nav-link">Blog</a>
+              </li>
+              <li class="footer-linkItem nav-item">
+                <a href="./contact.html" class="nav-link">Contact Us</a>
+              </li>
             </ul>
-        </section>
-        <section id="services" class="container d-flex services">
-           <div class="row row-cols-1 row-cols-xl-3 row-cols-md-2 row-cols-sm-1 m-4 p-4 g-4">
-              <div class="col p-2">
-                 <div class="card cards border border-light p-4 h-100">
-                    <img src="./img/web.svg" alt="web" class="card-image img-fluid m-2 p-2 w-50">
-                    <div class="card-body">
-                      <h4 class="card-title p-2">Web Development</h4>
-                      <p class="card-text text">Our developers are carefully considering how your product should work while mainta...</p>
-                    </div>  
-                      <div class="card-footer">
-                        <a class="btn card-btn viewAllBtn" href="./serviceDetails.html">&#8594;</a>
-                      </div>
-                </div>
-              </div>
-              <div class="col p-2">
-                  <div class="card cards border border-light p-4 h-100">
-                    <img src="./img/seo.svg" alt="seo" class="card-image img-fluid m-2 p-2 w-50">
-                    <div class="card-body ">
-                      <h4 class="card-title p-2">SEO optimization</h4>
-                      <p class="card-text text">Promotion of your product is an important step in making money and constant popula...</p>
-                    </div>  
-                      <div class="card-footer">
-                        <a class="btn card-btn viewAllBtn" href="./serviceDetails.html">&#8594;</a>
-                      </div>
-                  </div>
-              </div>
-              <div class="col p-2">
-                  <div class="card cards border border-light p-4 h-100">
-                    <img src="./img/ui.svg" alt="ui" class="card-image img-fluid m-2 p-2 w-50">
-                    <div class="card-body">
-                      <h4 class="card-title p-2">Ui/UX Design</h4>
-                      <p class="card-text text">Everything starts with the beautiful. And professional design is of great importa...</p>
-                    </div> 
-                      <div class="card-footer">
-                        <a class="btn card-btn viewAllBtn" href="./serviceDetails.html">&#8594;</a>
-                      </div>
-                  </div>
-              </div>
-              <div class="col p-2">
-                <div class="card cards border border-light p-4 h-100">
-                   <img src="./img/app.png" alt="web" class="card-image img-fluid m-2 p-2 w-50">
-                   <div class="card-body">
-                     <h4 class="card-title p-2">App Development</h4>
-                     <p class="card-text text">Our developers are carefully considering how your product should work while mainta...</p>
-                    </div> 
-                    <div class="card-footer">
-                      <a class="btn card-btn viewAllBtn" href="./serviceDetails.html">&#8594;</a>
-                    </div>
-                </div>
-             </div>
-             <div class="col p-2">
-                 <div class="card cards border border-light p-4 h-100">
-                   <img src="./img/marketing.png" alt="seo" class="card-image img-fluid m-2 p-2 w-50">
-                   <div class="card-body ">
-                     <h4 class="card-title p-2">Marketing strategy</h4>
-                     <p class="card-text text">Promotion of your product is an important step in making money and constant popula...</p>
-                    </div> 
-                     <div class="card-footer">
-                      <a class="btn card-btn viewAllBtn" href="./serviceDetails.html">&#8594;</a>
-                     </div>
-                 </div>
-             </div>
-             <div class="col p-2">
-                 <div class="card cards border border-light p-4 h-100">
-                   <img src="./img/pay.png" alt="ui" class="card-image img-fluid m-2 p-2 w-50">
-                   <div class="card-body">
-                     <h4 class="card-title p-2">Pay per click</h4>
-                     <p class="card-text text">Everything starts with the beautiful. And professional design is of great importa...</p>
-                    </div> 
-                     <div class="card-footer">
-                      <a class="btn card-btn viewAllBtn" href="./serviceDetails.html">&#8594;</a>
-                     </div>
-                 </div>
-             </div>
-            </div>
-          </section>
-        <section id="portfolio" class="portfolio">
-            <div class="p-4 m-5">
-                <div class="heading__body text-dark">
-                  <h3 class="pretitle polygon">HOW IT WORKS</h3>
-                  <h2 class="title">Watch Our Working Process</h2>
-                </div>
-            </div>
-            <div class="portfolio__images row row-cols-1 row-cols-xl-2 row-cols-md-2 row-cols-sm-1 m-5 pb-4"> 
-              <div class="col">
-                <div class="card">
-                    <video controls>
-                      <source src="./img/video.webm" type="video/webm" autoplay muted loop>
-                    </video>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card border-0">
-                  <p class="cases-black">PROCESS</p>
-                </div>
+          </div>
+        </nav>
+        <hr />
+        <section class="contacts p-3">
+          <div class="footer-row row">
+            <div class="footer-col col-sm">
+              <div class="media">
+                <ul class="media__links d-flex footer-links p-0">
+                  <li class="link-item">
+                    <a href="https://www.facebook.com/">
+                      Fb<span>&#8212;</span></a
+                    >
+                  </li>
+                  <li class="link-item">
+                    <a href="https://twitter.com/"> Tw<span>&#8212;</span></a>
+                  </li>
+                  <li class="link-item">
+                    <a href="https://www.instagram.com/"> In</a>
+                  </li>
+                </ul>
+                <p class="text">&#169; All rights reserved. 2023</p>
               </div>
             </div>
-        </section>
-        <section id="service" class="container service">
-            <div class="p-4 m-4">
-                <div class="heading__body">
-                  <h3 class="pretitle polygon">PRICES</h3>
-                  <h2 class="title">How Much it Costs</h2>
-                </div>
+            <div class="footer-col col-sm">
+              <div class="adress">
+                <h6>Address:</h6>
+                <address class="footer-links">
+                  <span>27 Division St, New York,</span><br />
+                  <span>NY 10002, USA</span><br />
+                </address>
+              </div>
             </div>
-            <div class="row row-cols-1 row-cols-xl-3 row-cols-md-2 row-cols-sm-1 p-4 g-2 m-1">
-               <div class="col p-2">
-                  <div class="card cards border border-light p-4 h-100">
-                    <div class="card-header main-color">
-                        BASIC
-                      </div>
-                     <div class="card-body">
-                       <h4 class="card-title p-2"><sup>$</sup>479<sup>.99</sup></h4>
-                        <p class="card-text text">The approach to each new project is individual, we treat equally every customer.</p>
-                        <p class="text item-text">Customized Store Design</p>
-                        <p class="text item-text">Inquiry Form</p>
-                        <p class="text item-text">Responsive Design</p>
-                        <p class="text item-text">Subscription Pages</p>
-                      </div> 
-                        <div class="card-footer">
-                         <button type="button" class="card__btn">Buy Now</button>
-                       </div>
-                 </div>
-               </div>
-               <div class="col p-2">
-                   <div class="card cards border border-light p-4 h-100">
-                    <div class="card-header main-color">
-                        POWER
-                      </div>
-                     <div class="card-body ">
-                       <h4 class="card-title p-2"><sup>$</sup>595<sup>.99</sup></h4>
-                       <p class="card-text text">The approach to each new project is individual, we treat equally every customer.</p>
-                       <p class="text item-text">Competitor analysis</p>
-                       <p class="text item-text">Offer Pop-Up Windows</p>
-                       <p class="text item-text">Design prototyping</p>
-                       <p class="text item-text">Subscription Pages</p>
-                      </div> 
-                       <div class="card-footer">
-                         <button type="button" class="card__btn">Buy Now</button>
-                       </div>
-                   </div>
-               </div>
-               <div class="col p-2">
-                   <div class="card cards border border-light p-4 h-100">
-                    <div class="card-header main-color">
-                        BUSINESS
-                      </div>
-                     <div class="card-body">
-                       <h4 class="card-title p-2"><sup>$</sup>779<sup>.99</sup></h4>
-                       <p class="card-text text">The approach to each new project is individual, we treat equally every customer.</p>
-                       <p class="text item-text">Unlimited Web Space</p>
-                       <p class="text item-text">FREE Site Building Tools</p>
-                       <p class="text item-text">FREE Site Building Tools</p>
-                       <p class="text item-text">Subscription Pages</p>
-                      </div> 
-                       <div class="card-footer">
-                         <button type="button" class="card__btn">Buy Now</button>
-                       </div>
-                   </div>
-               </div>
-             </div>
-           </section>
-        <footer id="contact" class="container">
-            <nav class="navbar p-3 flex-md-column flex-wrap">
-              <div class="container">
-                <a class="navbar-brand" href="#">
-                  <img src="./img/footer-logo.svg" alt="Bootstrap">
-                </a>
-                <ul class="footer-links nav justify-content-end">
-                  <li class="footer-linkItem nav-item"><a href="./index.html" class="nav-link active">Home</a></li>
-                  <li class="footer-linkItem nav-item"><a href="./about.html" class="nav-link">About Us</a></li>
-                  <li class="footer-linkItem nav-item"><a href="./services.html" class="nav-link">Services</a></li>
-                  <li class="footer-linkItem nav-item"><a href="./portfolio.html" class="nav-link">Portfolio</a></li>
-                  <li class="footer-linkItem nav-item"><a href="./blog.html" class="nav-link">Blog</a></li>
-                  <li class="footer-linkItem nav-item"><a href="./contact.html" class="nav-link">Contact Us</a></li>
+            <div class="footer-col col-sm">
+              <div class="hitUsUp">
+                <h6>Hit Us Up:</h6>
+                <address class="footer-links">
+                  <a href="mailto:info@sitename.com">info@sitename.com</a><br />
+                  <a href="tel:+13447890768"> +1 344 789 07 68</a>
+                </address>
+              </div>
+            </div>
+            <div class="footer-col col-sm">
+              <div class="usefulLinks footer-links">
+                <h6>Useful Links:</h6>
+                <ul class="usefulLinks links footer-links">
+                  <li class="usefulLinks linkItem">
+                    <a href="#">Help and Support</a>
+                  </li>
+                  <li class="usefulLinks linkItem"><a href="#">Careers</a></li>
                 </ul>
               </div>
-            </nav>
-            <hr />
-            <section class="contacts p-3">
-               <div class="footer-row row">
-                <div class="footer-col col-sm">
-                  <div class="media">
-                    <ul class="media__links d-flex footer-links p-0">
-                      <li class="link-item"><a href="https://www.facebook.com/"> Fb<span>&#8212;</span></a></li>
-                      <li class="link-item"><a href="https://twitter.com/"> Tw<span>&#8212;</span></a></li>
-                      <li class="link-item"><a href="https://www.instagram.com/"> In</a></li>
-                    </ul>
-                    <p class="text">&#169; All rights reserved. 2023</p>
-                  </div>
-                </div>
-                <div class="footer-col col-sm">
-                  <div class="adress">
-                    <h6>Address:</h6>
-                    <address class="footer-links">
-                        <span>27 Division St, New York,</span><br />
-                        <span>NY 10002, USA</span><br />   
-                    </address>
-                  </div>
-                </div>
-                <div class="footer-col col-sm">
-                  <div class="hitUsUp">
-                    <h6>Hit Us Up:</h6>
-                    <address class="footer-links">
-                      <a href="mailto:info@sitename.com">info@sitename.com</a><br />
-                      <a href="tel:+13447890768"> +1 344 789 07 68</a>
-                    </address>
-                  </div>
-                </div>
-                <div class="footer-col col-sm">
-                  <div class="usefulLinks footer-links">
-                    <h6>Useful Links:</h6>
-                    <ul class="usefulLinks links footer-links">
-                      <li class="usefulLinks linkItem"><a href="#">Help and Support</a></li>
-                      <li class="usefulLinks linkItem"><a href="#">Careers</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </section> 
-          </footer>
+            </div>
+          </div>
+        </section>
+      </footer>
     </div>
-    <script 
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" 
-      crossorigin="anonymous">
-    </script>
-    <script 
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" 
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
       integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-      crossorigin="anonymous">
-    </script>
+      crossorigin="anonymous"
+    ></script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
