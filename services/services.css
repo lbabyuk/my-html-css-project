@@ -46,9 +46,17 @@
   font-size: 5rem;
 }
 
+
+@media screen and (max-width: 999px) {
+  .cases-black {
+  font-size: 4rem;
+}
+}
+
+
 @media screen and (max-width: 769px) {
   .cases-black {
-    font-size: 4rem;
+    font-size: 3.6rem;
   }
 
   .heading__body h2 {
