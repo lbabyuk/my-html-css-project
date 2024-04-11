@@ -67,3 +67,10 @@
     background: url("../img/Stroke.svg") no-repeat right;
   }
 }
+
+@media screen and (max-width: 999px) {
+  .search {
+    background: url("../img/Stroke.svg") no-repeat right;
+    background-position: 590px 7px;
+  }
+}

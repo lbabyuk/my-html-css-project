@@ -104,4 +104,17 @@
   .slider-scrollbar .scrollbar-thumb {
     width: 20%;
   }
+
+  .beintouch-btn {
+    display: inline-block;
+  }
+
+  .col-btn {
+    padding: 0;
+    text-align: left;
+  }
+
+  .heading__body .pretitle {
+    padding-top: 2rem;
+  }
 }

@@ -8,7 +8,7 @@ export default {
 				quality: 100,
 			},
 			jpeg: {
-				quality: 100,
+				quality: 80,
 			},
 			jpg: {
 				quality: 80,

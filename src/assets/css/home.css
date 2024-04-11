@@ -13,7 +13,7 @@ body {
   width: 100%;
   height: 100%;
 
-  color: #fff;
+  color: var(--text-white);
 
   font-family: "Poppins", sans-serif;
    
@@ -44,13 +44,6 @@ body {
 }
 
 /* brand */
-
-.home {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 70vh;
-}
 
 .polygon {
   display: flex;
@@ -195,8 +188,6 @@ body {
 
 .cases-black,
 .cases-white {
-  /* rotate: -90deg; */
-
   font-weight: bolder;
 }
 
@@ -497,10 +488,53 @@ hr {
   }
 
   .get-more {
-    display: block;
+    display: inline-block;
   }
 
   .cases-white {
     font-size: 5rem;
+  }
+  
+  .side-icon-bar a {
+    font-size: 1rem;
+  }
+
+  .title{
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .pretitle {
+    font-size: .65rem;
+  }
+
+  .button {
+    padding: 8px 40px;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+ 
+  .text {
+    font-size: .9rem;
+  }
+
+  .cards {
+    padding: 5px;
+  }
+
+  .beintouch {
+    text-align: center;
+  }
+
+  svg {
+    width: 60%;
   }
 }

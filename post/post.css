@@ -25,3 +25,15 @@ footer ul li,
 .aboutus ul li {
   list-style: none;
 }
+
+h5 {
+  line-height: 1.6;
+}
+
+.tags-list-item::before{
+  content: '#';
+}
+
+.tags-list-item:not(:last-child)::after{
+  content: '\2014';
+}
