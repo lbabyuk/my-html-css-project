@@ -5,13 +5,13 @@ export default {
 	plugins: [
 		ViteImageOptimizer({
 			png: {
-				quality: 50,
+				quality: 100,
 			},
 			jpeg: {
 				quality: 100,
 			},
 			jpg: {
-				quality: 50,
+				quality: 80,
 			},
 			tiff: {
 				quality: 100,
@@ -24,7 +24,7 @@ export default {
 	build: {
 		rollupOptions: {
 			input: {
-				main: resolve(__dirname, 'home.html'),
+				main: resolve(__dirname, 'index.html'),
 				about: resolve(__dirname, './about/about.html'),
 				blog: resolve(__dirname, './blog/blog.html'),
 				contact: resolve(__dirname, './contact/contact.html'),
