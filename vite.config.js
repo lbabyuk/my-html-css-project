@@ -2,6 +2,7 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import { resolve } from 'path';
 
 export default {
+	base: '/my-html-css-project/',
 	plugins: [
 		ViteImageOptimizer({
 			png: {
