@@ -1,0 +1,21 @@
+:root {
+  --main-bg: #0f1118;
+  --text-dark: #989cac;
+  --main-color: #ff455b;
+  --text-white: #fff;
+  --text: #26272c;
+  --first-gradient: #ff455b;
+  --second-gradient: #ff7245;
+}
+
+.service-content {
+  background-color: transparent;
+}
+
+.cases-white {
+  font-size: 3.6rem;
+}
+
+.portfolio__header {
+  color: var(--main-bg);
+}

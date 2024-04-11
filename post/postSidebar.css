@@ -1,0 +1,69 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%;
+  padding: 20px;
+}
+
+.main {
+  flex: 70%;
+  padding: 20px;
+}
+
+.categories-item::before {
+  content: "\268A" " ";
+}
+
+.search {
+  background: url("../img/search.svg") no-repeat right;
+  background-position: 310px 7px;
+}
+
+.email {
+  background: url("../img/Stroke.svg") no-repeat right;
+  background-position: 280px 7px;
+}
+
+.categories-item:hover {
+  color: var(--second-gradient);
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: var(--second-gradient);
+
+  cursor: pointer;
+}
+
+.label {
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 577px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .search {
+    background: url("../img/search.svg") no-repeat right;
+  }
+
+  .email {
+    background: url("../img/Stroke.svg") no-repeat right;
+  }
+
+  .label {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .search {
+    background: url("../img/search.svg") no-repeat right;
+  }
+
+  .email {
+    background: url("../img/Stroke.svg") no-repeat right;
+  }
+}

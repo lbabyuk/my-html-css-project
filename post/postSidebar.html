@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DIGENS - digital products for your brand">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+        crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/serviceDetails.css">
+    <link rel="stylesheet" href="css/portfolioDetails.css">
+    <link rel="stylesheet" href="css/post.css">
+    <link rel="stylesheet" href="css/postSidebar.css"> -->
+    <script type="module" src="./post.js" defer></script>
+    <title>DIGENS</title>
+</head>
+<body>
+    <div class="container-fluid">
+      <header id="header" class="container-fluid header">
+        <nav class="navbar navbar-dark">
+          <div class="container-fluid">
+            <div class="d-flex align-self-sm-evenly">
+              <button class="navbar-toggler me-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <img src="/img/burger-menu.svg" alt="burger-menu">
+              </button>
+              <a class="navbar-brand" href="#"><img src="/img/header-logo.svg" alt="header-logo"></a>
+            </div>
+            <div class="d-flex justify-content-evenly align-items-center">
+              <a href="tel:+15471258965" class="smartphone-img me-3"><img src="/img/smartphone-xs.svg" alt="smartphone-mobile" class="smartphone-mobile d-lg-none d-md-none d-lg-none"></a>
+              <a href="tel:+15471258965" class="smartphone-img me-3"><img src="/img/smartphone-xl.svg" alt="smartphone-xl" class="smartphone-xl d-sm-none d-md-block d-lg-block d-xl-block d-none"></a>
+              <a href="tel:+15471258965" class="phone text-light text-center me-3 d-sm-none d-md-block">+1 547 125 89 65</a>
+              <button class="btn btn-outline-light d-sm-none d-md-block quote" type="submit">Get A Quote</button>
+            </div>
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <a class="navbar-brand" href="#"><img src="/img/header-logo.svg" alt="header-logo"></a>
+                <a href="#" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></a>
+              </div>
+              <div class="offcanvas-body">
+                <ul
+                class="navbar-nav justify-content-end text-center flex-grow-1 pe-3 header-links"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../about/about.html"
+                    >About us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../services/services.html">Service</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../services/serviceDetails.html"
+                    >Service details</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../portfolio/portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../portfolio/portfolioDetails.html"
+                    >Portfolio details</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../blog/blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../post/post.html">Post</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../post/postSidebar.html"
+                    >Post With Sidebar</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../contact/contact.html">Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../error/error.html">404</a>
+                </li>
+              </ul>
+                <form class="d-flex mt-3" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-light" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section class="side-icon-bar">
+              <a href="https://www.facebook.com/">Fb</a>
+              <a href="https://twitter.com/">Tw</a>
+              <a href="https://www.instagram.com/">In</a>
+            </section>
+      <div class="container-md p-4">
+      <div class="row">
+          <section id="aboutus" class="container d-flex p-3 flex-wrap aboutus">
+            <h1>POST WITH SIDEBAR</h1>
+            <ul class="d-flex justify-content-end align-items-center text-center flex-grow-1">
+                <li class="nav-item m-2"><a class="nav-link active home-location" aria-current="page" href="../index.html">Home</a></li>
+                <li class="nav-item m-2"><a class="nav-link" aria-current="page" href="#">&#8212;</a></li>
+                <li class="nav-item m-2"><a class="nav-link service-details" aria-current="page" href="../blog/blog.html">Blog</a></li>
+                <li class="nav-item m-2"><a class="nav-link" aria-current="page" href="#">&#8212;</a></li>
+                <li class="nav-item m-2"><a class="nav-link service-details" aria-current="page" href="#">Post With Sidebar</a></li>
+              </ul>
+          </section>
+          <div class="main">
+              <section id="blog-info" class="container-md p-4 blog-info">
+                <div class="card my-3 border-0 bg-transparent">
+                    <img src="/img/blog-1.png" class="card-img-top" alt="blog-1"  loading="lazy">
+                    <div class="card-body">
+                        <div class="card-text my-4">
+                            <small class="text-muted before after d-flex align-self-center">
+                                Laura Poliquine &#8212; Jan 17, 2020 &#8212;
+                            </small>
+                        <h5 class="card-title text-uppercase my-4">how to create beautiful gifts for people you love this new year</h5>
+                        <p class="card-text text my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-3 border-1 border-danger bg-transparent">
+                    <div class="card-body p-5">
+                        <blockquote class="blockquote mb-0">
+                            <p class="p-4 text">As a participatory media culture, social media
+                                platforms or social networking sites are forms
+                                of mass communication that, through media technologies,
+                                allow large amounts of product and distribution of
+                                content to reach the largest audience possible.
+                            </p>
+                            <footer class="blockquote-footer text-white"><cite title="Source Title">Olivia portrman</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="my-3 border-0 bg-transparent">
+                    <div class="py-5">
+                        <h5 class="text-uppercase my-4">Additional things to make your family happy</h5>
+                        <p class="text my-4">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                            in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                            sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <ol class="list-text text">
+                            <li class="list-item py-3">
+                                As a participatory media culture,
+                                social media platforms or social
+                                networking sites are forms of mass
+                                communication that, through media technologies.
+                            </li>
+                            <li class="list-item py-3">
+                                Allow large amounts of product and distribution of
+                                content to reach the largest audience possible.
+                            </li>
+                            <li class="list-item py-3">
+                                However, there are downsides to virtual promotions
+                                as servers, systems, and websites may crash, fail,
+                                or become overloaded with information. You also can
+                                stand risk of losing uploaded information and storage
+                                and at a use can also be effected by a number of outside variables.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="tags d-flex ">
+                    <p class="tags-title">Tags: </p>
+                    <ul class="tags-list d-flex text">
+                        <li class="tags-list-item px-2"># idea</li>
+                        <li class="tags-list-item px-2">&#8212;</li>
+                        <li class="tags-list-item px-2"># marketing</li>
+                        <li class="tags-list-item px-2">&#8212;</li>
+                        <li class="tags-list-item px-2"># brand</li>
+                    </ul>
+                </div>
+                <div class="row border border-1 border-secondary d-flex justify-content-center align-items-center h-100 p-4 m-2">
+                    <div class="col-xl-2 col-md-4 col-sm-6 image p-2">
+                      <img src="/img/team-member-2.png" alt="anastasi" class="img-fluid rounded-3" style="width: 15rem;"  loading="lazy">
+                    </div>
+                    <div class="col-xl-8 col-md-8 col-sm-6 p-2">
+                        <h5 class="card-title p-2">Olivia Portrman</h5>
+                        <p class="card-text p-2 text">
+                            Web developer since 2006. Create hundreds of websites,
+                            HTML and CSS3 expert, who started to learn web design
+                            on a world-class level.
+                        </p>
+                        <div class="media p-2">
+                            <ul class="media__links d-flex footer-links p-0">
+                              <li class="link-item"><a href="https://www.facebook.com/"> Fb<span>&#8212;</span></a></li>
+                              <li class="link-item"><a href="https://twitter.com/"> Tw<span>&#8212;</span></a></li>
+                              <li class="link-item"><a href="https://www.instagram.com/"> In</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+              </section>
+              <section id="form" class="container-md p-4">
+                <div class="form-title">
+                    <h2 class="title blog_title">Live A Comment</h2>
+                </div>
+                    <form class="d-flex row" role="search">
+                        <div class="row g-3">
+                            <div class="col-sm">
+                            <input type="text" class="form-control bg-transparent text-white border-secondary" placeholder="Name*" aria-label="Name">
+                            </div>
+                            <div class="col-sm">
+                            <input type="text" class="form-control bg-transparent text-white border-secondary" placeholder="Email*" aria-label="Email">
+                            </div>
+                            <div class="col-sm">
+                            <input type="text" class="form-control bg-transparent text-white border-secondary" placeholder="Phone" aria-label="Phone">
+                            </div>
+                            <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control h-25 text bg-transparent text-white border-secondary" placeholder="Leave a comment here" id="floatingTextarea" rows="10"></textarea>
+                                <label for="floatingTextarea" class="text">Comment</label>
+                            </div>
+                            </div>
+                            <div class="col-sm">
+                            <button class="btn brandBtn text-capitalize text-white" type="submit">Post Comment</button>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+              <section id="blog" class="container">
+                <div class="p-2 my-4">
+                  <div class="heading__body">
+                    <h3 class="pretitle polygon">MORE INFO</h3>
+                    <h2 class="title blog_title">Related Posts</h2>
+                  </div>
+                </div>
+                <div class="portfolio__images row row-cols-1 row-cols-xl-2 row-cols-md-2 my-3 pb-4">
+                  <div class="col">
+                    <div class="card border border-0">
+                      <img src="/img/blog-1.png" alt="airpods" class="img-fluid"  loading="lazy">
+                    </div>
+                    <div class="card-body m-2 ">
+                        <div class="card-text my-4">
+                            <small class="text-muted before after d-flex align-self-center">
+                                Laura Poliquine &#8212; Jan 17, 2020 &#8212;
+                            </small>
+                            <h4 class="card-text mb-4 mt-4">The top places for inspiration to have a rest and create something new</h4>
+                            <div class="card-footer">
+                                <a href="../blog/blog.html" class="viewAllBtn m-2"><img src="/img/arrow.svg" alt="arrow"></a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card border border-0">
+                      <img src="/img/blog-2.png" alt="airpods" class="img-fluid"  loading="lazy">
+                    </div>
+                    <div class="card-body m-2">
+                        <div class="card-text my-4">
+                            <small class="text-muted before after d-flex align-self-center">
+                                Dianne Russell &#8212; Jan 17, 2020 &#8212;
+                            </small>
+                            <h4 class="card-text mb-4 mt-4">The top places for inspiration to have a rest and create something new</h4>
+                            <div class="card-footer">
+                              <a href="../blog/blog.html" class="viewAllBtn m-2"><img src="/img/arrow.svg" alt="arrow" class="arrow-image"></a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+          </div>
+          <aside class="side container p-4">
+            <div class="form py-4">
+              <form class="d-flex row" role="search">
+                <div class="col">
+                  <input class="form-control m-2 input search bg-transparent text-white border-secondary" type="search" placeholder="Search..." aria-label="Search">
+                </div>
+              </form>
+            </div>
+            <section class="categories py-5">
+                <h5 class="my-4">Categories </h5>
+                <hr>
+                <p class="categories-item py-3">Development <span class="text">(15)</span></p>
+                  <hr>
+                <p class="categories-item py-3">Identity <span class="text">(13)</span></p>
+                    <hr>
+                <p class="categories-item py-3">UI/UX Design <span class="text">(38)</span></p>
+                    <hr>
+                <p class="categories-item py-3">Apps <span class="text">(15)</span></p>
+                    <hr>
+                <p class="categories-item py-3">SEO&SMM <span class="text">(3)</span></p>
+                    <hr>
+            </section>
+
+            <section id="blog" class="container">
+              <div class="p-2 my-4">
+                <div class="heading__body">
+                  <h2 class="title blog_title">Recent Posts</h2>
+                </div>
+              </div>
+              <div class="portfolio__images row row-cols-1 row-cols-xl-1 row-cols-md-1 my-3 pb-4">
+                <div class="col">
+                  <div class="card border border-0">
+                    <img src="/img/blog-1.png" alt="airpods" class="img-fluid"  loading="lazy">
+                  </div>
+                  <div class="card-body m-2 ">
+                      <div class="card-text my-4">
+                          <small class="text-muted">
+                              Laura Poliquine &#8212; Jan 17, 2020
+                          </small>
+                          <h6 class="card-text mb-4 mt-4">The top places for inspiration to have a rest and create something new</h6>
+                          <div class="card-footer">
+                              <a href="../blog/blog.html" class="viewAllBtn"><img src="/img/arrow.svg" alt="arrow"></a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border border-0">
+                    <img src="/img/blog-2.png" alt="airpods" class="img-fluid"  loading="lazy">
+                  </div>
+                  <div class="card-body m-2">
+                      <div class="card-text my-4">
+                          <small class="text-muted">
+                              Dianne Russell &#8212; Jan 17, 2020
+                          </small>
+                          <h6 class="card-text mb-4 mt-4">The top places for inspiration to have a rest and create something new</h6>
+                          <div class="card-footer">
+                            <a href="../blog/blog.html" class="viewAllBtn"><img src="/img/arrow.svg" alt="arrow" class="arrow-image"></a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+          <hr>
+          <section id="newsletter" class="container">
+            <div class="beintouch__card">
+                <h2 class="card-title p-2">Newsletter</h2>
+                <p class="card-subtitle p-2 text">Subscribe if you want always to be known about all the news and available propositions</p>
+            </div>
+            <div class="form">
+              <form class="d-flex row" role="search">
+                <div class="col-12">
+                  <input class="form-control m-2 input email bg-transparent text-white border-secondary" type="search" placeholder="Enter your email" aria-label="Search">
+                </div>
+                <div class="col-12">
+                  <div class="form-check mb-3 d-flex align-items-center">
+                    <input class="form-check-input m-1 input border" type="checkbox" id="gridCheck">
+                    <label class="form-check-label label" for="gridCheck">
+                      I Accept  all <span class="terms"> Terms and Conditions</span>
+                    </label>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section>
+          <hr>
+          <section class="tags d-flex">
+            <p class="tags-title">Tags: </p>
+            <ul class="tags-list d-flex text flex-wrap">
+                <li class="tags-list-item px-2">#idea</li>
+                <li class="tags-list-item px-2">&#8212;</li>
+                <li class="tags-list-item px-2">#marketing</li>
+                <li class="tags-list-item px-2">&#8212;</li>
+                <li class="tags-list-item px-2">#brand</li>
+                <li class="tags-list-item px-2">&#8212;</li>
+                <li class="tags-list-item px-2">#portfolio</li>
+                <li class="tags-list-item px-2">&#8212;</li>
+                <li class="tags-list-item px-2">#business</li>
+                <li class="tags-list-item px-2">&#8212;</li>
+                <li class="tags-list-item px-2">#corporate</li>
+                <li class="tags-list-item px-2">&#8212;</li>
+                <li class="tags-list-item px-2">#apps</li>
+                <li class="tags-list-item px-2">&#8212;</li>
+                <li class="tags-list-item px-2">#web</li>
+                <li class="tags-list-item px-2">&#8212;</li>
+                <li class="tags-list-item px-2">#development</li>
+                <li class="tags-list-item px-2">&#8212;</li>
+                <li class="tags-list-item px-2">#interface</li>
+            </ul>
+        </section>
+        </aside>
+      </div>
+    </div>
+    <footer id="contact" class="container">
+      <nav class="navbar p-3 flex-md-column flex-wrap">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="/img/footer-logo.svg" alt="Bootstrap">
+          </a>
+          <ul class="footer-links nav justify-content-end">
+            <li class="footer-linkItem nav-item">
+              <a href="../index.html" class="nav-link active">Home</a>
+            </li>
+            <li class="footer-linkItem nav-item">
+              <a href="../about/about.html" class="nav-link">About Us</a>
+            </li>
+            <li class="footer-linkItem nav-item">
+              <a href="../services/services.html" class="nav-link">Services</a>
+            </li>
+            <li class="footer-linkItem nav-item">
+              <a href="../portfolio/portfolio.html" class="nav-link">Portfolio</a>
+            </li>
+            <li class="footer-linkItem nav-item">
+              <a href="../blog/blog.html" class="nav-link">Blog</a>
+            </li>
+            <li class="footer-linkItem nav-item">
+              <a href="../contact/contact.html" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <hr />
+      <section class="contacts p-3">
+         <div class="footer-row row">
+          <div class="footer-col col-sm">
+            <div class="media">
+              <ul class="media__links d-flex footer-links p-0">
+                <li class="link-item"><a href="https://www.facebook.com/"> Fb<span>&#8212;</span></a></li>
+                <li class="link-item"><a href="https://twitter.com/"> Tw<span>&#8212;</span></a></li>
+                <li class="link-item"><a href="https://www.instagram.com/"> In</a></li>
+              </ul>
+              <p class="text">&#169; All rights reserved. 2023</p>
+            </div>
+          </div>
+          <div class="footer-col col-sm">
+            <div class="adress">
+              <h6>Address:</h6>
+              <address class="footer-links">
+                  <span>27 Division St, New York,</span><br />
+                  <span>NY 10002, USA</span><br />
+              </address>
+            </div>
+          </div>
+          <div class="footer-col col-sm">
+            <div class="hitUsUp">
+              <h6>Hit Us Up:</h6>
+              <address class="footer-links">
+                <a href="mailto:info@sitename.com">info@sitename.com</a><br />
+                <a href="tel:+13447890768"> +1 344 789 07 68</a>
+              </address>
+            </div>
+          </div>
+          <div class="footer-col col-sm">
+            <div class="usefulLinks footer-links">
+              <h6>Useful Links:</h6>
+              <ul class="usefulLinks links footer-links">
+                <li class="usefulLinks linkItem"><a href="#">Help and Support</a></li>
+                <li class="usefulLinks linkItem"><a href="#">Careers</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous">
+  </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous">
+  </script>
+</body>
+</html>
